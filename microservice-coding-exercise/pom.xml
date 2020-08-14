@@ -12,7 +12,7 @@
     <modules>
         <module>microservice</module>
         <module>functional-tests</module>
-        <module>microservice-admin</module>
+        <module>admin-service</module>
     </modules>
 
   <properties>

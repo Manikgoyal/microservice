@@ -6,10 +6,14 @@ some results.
 
 ## Project Structure
 
-This is a multi module maven project with two modules:
+This is a multi module maven project with six modules:
 
 - The `micoservice` module produces a spring boot application.
 - The `functional-tests` is used to run functional tests using the [karate](https://github.com/intuit/karate) library.
+- The Zuul Api Gateway
+- The Configuration Server
+- The Admin Server
+- The Discovery Server
 
 ## Instructions
 

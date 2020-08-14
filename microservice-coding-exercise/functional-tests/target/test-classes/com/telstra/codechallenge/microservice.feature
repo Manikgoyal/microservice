@@ -8,7 +8,7 @@ Feature: As a developer i want to know if my spring boot application is running
     And path '/actuator/health'
     When method GET
     Then status 200
-    And match response == { "status" : "UP" }
+    And match response contains {"status": "UP"}
 
   Scenario: Is the info uri available and returning data
     Given url microserviceUrl

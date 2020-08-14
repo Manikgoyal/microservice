@@ -10,16 +10,33 @@
     <description>A project to use for code challenges</description>
 
     <modules>
+    	<module>admin-service</module>
+    	<module>config-server</module>
+    	<module>eureka-server</module>
+    	<module>zuul-api-gateway</module>
         <module>microservice</module>
         <module>functional-tests</module>
-        <module>admin-service</module>
     </modules>
 
   <properties>
     <lombok.version>1.18.12</lombok.version>
-    <spring.boot.version>2.2.6.RELEASE</spring.boot.version>
+    <spring.boot.version>2.3.3.RELEASE</spring.boot.version>
     <karate.version>0.9.5</karate.version>
+    <spring-cloud.version>Hoxton.SR7</spring-cloud.version>
   </properties>
+  
+  <dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>${spring-cloud.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
 
     <build>
         <plugins>
